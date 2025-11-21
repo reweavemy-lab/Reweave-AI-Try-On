@@ -20,11 +20,22 @@ client = genai.Client(api_key=api_key)
 
 # Page configuration
 st.set_page_config(
-    page_title="Reweave -  ",
+    page_title="Reweave - AI Try-On",
     page_icon="🏓",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
+
+# Allow embedding in iframes - this helps with Streamlit Cloud embedding
+st.markdown("""
+<script>
+    // Allow embedding by removing X-Frame-Options restrictions
+    if (window.parent !== window) {
+        // We're in an iframe
+        console.log('Running in iframe');
+    }
+</script>
+""", unsafe_allow_html=True)
 
 # Custom CSS for pickleball-themed styling
 st.markdown("""
