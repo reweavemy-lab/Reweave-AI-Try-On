@@ -13,7 +13,7 @@
 6. **After deployment**, go to Settings → Secrets
 7. **Add secret**: 
    - Key: `GOOGLE_API_KEY`
-   - Value: `AIzaSyDcp-qwhSQfaBzmftTlH4NfPcWHJNRQuoc`
+   - Value: `[YOUR_NEW_API_KEY]` ⚠️ **Generate a new key - the old one was exposed!**
 8. **Redeploy** the app (it will pick up the secret)
 
 Your app will be live at: `https://[your-app-name].streamlit.app`
@@ -36,7 +36,7 @@ Your app will be live at: `https://[your-app-name].streamlit.app`
 6. **Click**: "Create Web Service"
 7. **Add environment variable**:
    - Key: `GOOGLE_API_KEY`
-   - Value: `AIzaSyDcp-qwhSQfaBzmftTlH4NfPcWHJNRQuoc`
+   - Value: `[YOUR_NEW_API_KEY]` ⚠️ **Generate a new key - the old one was exposed!**
 
 Your app will be live at: `https://[your-app-name].onrender.com`
 

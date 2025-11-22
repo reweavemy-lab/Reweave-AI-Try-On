@@ -19,7 +19,8 @@
 
 3. **Set Environment Variables**:
    - In Streamlit Cloud dashboard, go to Settings → Secrets
-   - Add: `GOOGLE_API_KEY=AIzaSyDcp-qwhSQfaBzmftTlH4NfPcWHJNRQuoc`
+   - Add: `GOOGLE_API_KEY=your_new_api_key_here`
+   - **IMPORTANT**: Never commit API keys to git. Always use secrets/environment variables.
 
 4. **Custom Domain** (Optional):
    - In Streamlit Cloud settings, add custom domain: `ai.reweave.shop`
@@ -37,7 +38,7 @@
        startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
        envVars:
          - key: GOOGLE_API_KEY
-           value: AIzaSyDcp-qwhSQfaBzmftTlH4NfPcWHJNRQuoc
+           value: [SET_IN_RENDER_DASHBOARD]  # Never commit API keys to git!
    ```
 
 2. **Deploy**:
